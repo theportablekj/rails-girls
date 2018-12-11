@@ -40,7 +40,7 @@ class IdeasControllerTest < ActionDispatch::IntegrationTest
 
   test "should destroy idea" do
     assert_difference('Idea.count', -1) do
-      delete idea_url(@idea)
+      destroy idea_url(@idea)
     end
 
     assert_redirected_to ideas_url

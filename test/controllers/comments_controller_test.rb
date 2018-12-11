@@ -40,7 +40,7 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
 
   test "should destroy comment" do
     assert_difference('Comment.count', -1) do
-      delete comment_url(@comment)
+      destroy comment_url(@comment)
     end
 
     assert_redirected_to comments_url

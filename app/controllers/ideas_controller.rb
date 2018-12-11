@@ -53,8 +53,8 @@ class IdeasController < ApplicationController
     end
   end
 
-  # DELETE /ideas/1
-  # DELETE /ideas/1.json
+  # destroy /ideas/1
+  # destroy /ideas/1.json
   def destroy
     @idea.destroy
     respond_to do |format|

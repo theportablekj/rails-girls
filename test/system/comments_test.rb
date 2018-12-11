@@ -39,7 +39,7 @@ class CommentsTest < ApplicationSystemTestCase
   test "destroying a Comment" do
     visit comments_url
     page.accept_confirm do
-      click_on "Destroy", match: :first
+      click_on "destroy", match: :first
     end
 
     assert_text "Comment was successfully destroyed"

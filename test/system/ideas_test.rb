@@ -39,7 +39,7 @@ class IdeasTest < ApplicationSystemTestCase
   test "destroying a Idea" do
     visit ideas_url
     page.accept_confirm do
-      click_on "Destroy", match: :first
+      click_on "destroy", match: :first
     end
 
     assert_text "Idea was successfully destroyed"
